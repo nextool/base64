@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Utilisez notre convertisseur Base64 en ligne pour encoder ou décoder rapidement du texte ou des fichiers en Base64. Outil simple, rapide, et sécurisé.">
+  <title>Convertisseur Base64 en Ligne Gratuit - Encodeur/Décodeur Rapide</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Convertisseur Base64</h1>
+
+    <label for="inputText">Texte à convertir en Base64</label>
+    <textarea id="inputText" placeholder="Entrez ou collez le texte ici..."
+      aria-label="Zone de texte pour l'entrée à convertir"></textarea>
+
+    <div class="buttons">
+      <button id="encodeBtn" aria-label="Convertir le texte en Base64">Convertir en Base64</button>
+      <button id="decodeBtn" aria-label="Décoder le texte depuis Base64">Décoder depuis Base64</button>
+      <button id="copyBtn" aria-label="Copier le texte converti">Copier le résultat</button>
+    </div>
+
+    <label for="outputText">Résultat de la conversion Base64</label>
+    <textarea id="outputText" placeholder="Le résultat apparaîtra ici..." readonly
+      aria-label="Zone de texte pour afficher le résultat"></textarea>
+
+    <!-- Conteneur d'aperçu en temps réel -->
+    <div id="previewContainer" class="hidden">
+      <h2>Aperçu en temps réel</h2>
+      <div id="preview"></div>
+    </div>
+
+    <!-- Formulaire de conversion de fichiers -->
+    <div id="fileForm" class="hidden">
+      <h2>Convertir un fichier</h2>
+      <input type="file" id="fileInput" aria-label="Choisir un fichier pour la conversion">
+      <textarea id="fileOutput" placeholder="Le fichier converti apparaîtra ici..." readonly
+        aria-label="Zone de texte pour afficher le fichier converti"></textarea>
+    </div>
+
+    <h2>Qu'est-ce que Base64 ?</h2>
+    <p>Base64 est un système de codage utilisé pour convertir des données binaires en une chaîne de caractères. Cela est
+      utile dans des contextes comme l'envoi de données via des protocoles textuels tels que les emails ou le transfert
+      de fichiers.</p>
+
+    <h2>Pourquoi utiliser notre convertisseur Base64 en ligne ?</h2>
+    <p>Notre outil est conçu pour être rapide, simple et sécurisé. Il permet de convertir facilement des fichiers ou du
+      texte en Base64 ou de décoder des chaînes Base64. Aucun téléchargement n'est nécessaire, et toutes les conversions
+      se font localement dans votre navigateur.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Convertisseur Base64 | Generated</p>
+  </footer>
+
+  <script src="script/main.js"></script>
+</body>
+
+</html>
