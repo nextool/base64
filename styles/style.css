@@ -12,7 +12,7 @@
     color: #333;
     line-height: 1.6;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     /* Pour permettre au footer de se placer en bas */
     min-height: 100vh;
